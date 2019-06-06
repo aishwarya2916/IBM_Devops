@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
     <head>
         <title>DemoDRA - Current Weather</title>
-
         <link rel="stylesheet" href="/built/css/default.css" />
 
         <script src="/bower_components/angular/angular.js"></script>
         <script src="/bower_components/angular-route/angular-route.js"></script>
         <script src="/js/controllers.js"></script>
+        <style>
+      		 marquee span { 
+    		 margin-right: 70%; 
+          	} 
+          	 marquee p{            
+              font-family:"Comic Sans MS"
+          	}
+        </style>
     </head>
 
     <body>
-        <div float="left">
-            <% include includes/mainbody %>
-        </div>
+<center>
+<img src=https://www.cbronline.com/wp-content/uploads/2016/07/ibm.png alt="ibm_logo">
+<br>
+	</center>		
+	<marquee scrollamount="8">
+<p><font face="Comic sans MS">Welcome to DevOps Learning <span> </span> IBM<span> </span> Welcome to DevOps Learning  <span> </span>IBM <span> </span>
+Welcome to DevOps Learning  <span> </span>IBM<span> </span> Welcome to DevOps Learning  <span> </span>IBM<span> </span> Welcome to DevOps Learning <span> </span> IBM  </p>
+	</marquee>
     </body>
-
     <script>
          angular.element(document).ready(function() {
             angular.bootstrap(document, ['ConsoleModule']);
